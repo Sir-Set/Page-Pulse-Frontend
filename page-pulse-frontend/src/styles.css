@@ -1,0 +1,21 @@
+:root { font-family: Inter, system-ui, sans-serif; color: #e9edf5; background: #0c1222; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+.page-shell { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: radial-gradient(circle at top, #1e315b, #0c1222 58%); }
+.panel { width: min(700px, 100%); padding: clamp(28px, 6vw, 52px); background: #141d33; border: 1px solid #2d3d64; border-radius: 20px; box-shadow: 0 24px 70px #02050d80; }
+.eyebrow { margin: 0; color: #78a6ff; font-weight: 700; letter-spacing: .12em; font-size: .78rem; }
+h1 { font-size: clamp(2rem, 6vw, 3.6rem); margin: 12px 0; line-height: 1.05; }
+.intro { color: #b5c0d9; margin-bottom: 30px; }
+.audit-form label { display: block; margin-bottom: 8px; font-weight: 600; }
+.input-row { display: flex; gap: 10px; }
+input { min-width: 0; flex: 1; border: 1px solid #43547e; border-radius: 9px; background: #0c1222; color: inherit; padding: 12px; }
+button { border: 0; border-radius: 9px; padding: 12px 18px; color: #07101f; background: #84b1ff; cursor: pointer; font-weight: 700; }
+button:disabled { opacity: .65; cursor: wait; }
+.error { color: #ffafaf; margin: 18px 0 0; }
+.result { margin-top: 28px; padding-top: 24px; border-top: 1px solid #2d3d64; }
+.result h2 { margin: 0 0 16px; font-size: 1.1rem; }
+dl { margin: 0; display: grid; gap: 12px; }
+dl div { display: grid; grid-template-columns: 130px 1fr; gap: 16px; }
+dt { color: #9eacca; } dd { margin: 0; overflow-wrap: anywhere; } .url { color: #b8d2ff; }
+@media (max-width: 560px) { .input-row { flex-direction: column; } dl div { grid-template-columns: 1fr; gap: 3px; } }
